@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="darkmode.js" defer></script>
+    <title>Nomad Travel</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="icons/text.svg" alt="logo" id="logo"></a>
+        <div class="links">
+            <a href="#about">ABOUT</a>
+            <a href="#tours">TOURS</a>
+            <a href="#contact-form">REGISTER</a>
+            <button id="theme-switch">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+            </button>
+        </div>
+        <a href="profile.html"><img src="icons/account2.svg" alt="account" id="account"></a>
+    </header>
+
+    <div class="container">
+
+        <h1>Tour in Burabay from the agency «Nomad»</h1>
+        <img src="images/image.jpg" alt="Tour image" class="home-img">
+
+            <h2 class="agency-heading" id="about">Make your journey more than just a trip!</h2>
+            <p class="agency-parag">At Nomad Travel Agency, we believe that every journey should be more than just a trip — it should be an unforgettable experience.</p>
+
+            <section id="stats">
+                <div class="stats-container">
+                    <div class="stat">
+                        <img src="icons/globe_location_pin_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                        <span class="counter" data-target="50">0</span>
+                        <p>Beautiful Destinations</p>
+                    </div>
+                    <div class="stat">
+                        <img src="icons/sentiment_very_satisfied_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                        <span class="counter" data-target="10000">0</span>
+                        <p>Happy Travelers</p>
+                    </div>
+                    <div class="stat">
+                        <img src="icons/travel_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                        <span class="counter" data-target="15">0</span>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+            </section>
+
+        
+        <h2 id="tours">The Most Popular Tours</h2>
+        <div class="tour-container" id="tour-container">
+           
+                <div class="card burabay">
+                        <img src="images/borovoe.jpg" alt="burabay image">
+                        <div class="card-text">
+                            <h3>Burabay</h3>
+                            <p>Picturesque lakes and forests – “Kazakhstan’s Switzerland”. Burabay is known as the ‘Kazakh Switzerland’ with its crystal lakes, pine forests, and scenic mountains. A perfect place for hiking, relaxation, and connecting with nature.</p>
+                            <a href="burabay.html" class="card-btn">Learn More</a>
+                        </div>
+                </div>
+            
+                <div class="card charyn">
+                    <img src="images/chkk_3_1.jpg" alt="charyn image">
+                    <div class="card-text">
+                        <h3>Charyn Canyon</h3>
+                        <p>Majestic Canyon and Valley of Castles. Charyn Canyon is often called the ‘Grand Canyon of Kazakhstan’. Its Valley of Castles offers breathtaking landscapes shaped by millions of years of wind and water.</p>
+                        <a href="charyn.html" class="card-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="card emel">
+                    <img src="images/images.jpeg" alt="emel image">
+                    <div class="card-text">
+                        <h3>Altyn Emel</h3>
+                        <p>Discover singing dunes, colorful mountains, and rich wildlife in one of Kazakhstan’s most unique natural reserves.</p>
+                        <a href="emel.html" class="card-btn">Learn More</a>
+                    </div>
+                </div>
+        </div>
+        <hr>
+
+        <div class="search-container">
+            <h3>Check out Worldwide Tours from Nomad Kazakhstan!</h3>
+            <input type="text" id="searchInput" placeholder="Search tours or destinations...">
+        </div>
+
+        <div class="tour-container2">
+            <div class="card emel">
+                    <img src="images/360_F_214741146_jApjeGkU3GSPSpLhzyMsupP7frpAh1XH.jpg" alt="emel image">
+                    <div class="card-text">
+                        <h3>Paris</h3>
+                        <p>Stroll hand-in-hand along the Seine, sip coffee at charming cafés, and admire world-class art at the Louvre. Paris is the perfect city for romance, iconic sights, and unforgettable evenings.</p>
+                    </div>
+            </div>
+            <div class="card emel">
+                    <img src="images/maldivF_494092930_fsJUBpmii4OsnWCxySh1wS0xs94Wz9Qj.jpg" alt="emel image">
+                    <div class="card-text">
+                        <h3>Maldives</h3>
+                        <p>White-sand beaches, turquoise lagoons, and overwater bungalows define this tropical paradise. Ideal for snorkeling, relaxation, and luxury escapes surrounded by calm Indian Ocean waters.</p>
+                    </div>
+            </div>
+            <div class="card emel">
+                    <img src="images/japan09757539_uN5m8GcoukmQ3HLNhlxiVArqyqdwH0t2.jpg" alt="emel image">
+                    <div class="card-text">
+                        <h3>Japan</h3>
+                        <p>Witness springtime sakura painting parks and temples in soft pinks while enjoying traditional tea and vibrant street food. Japan blends ancient culture with modern comfort for a truly memorable journey.</p>
+                    </div>
+            </div>
+            <div class="card emel">
+                    <img src="images/egyptF_243600569_wuobKhXlrYP6b2yH95t9TQ7MkT7sUxVG.jpg" alt="emel image">
+                    <div class="card-text">
+                        <h3>Egypt</h3>
+                        <p>Stand in awe of the Great Pyramids, explore ancient temples, and ride camels across golden dunes at sunset. This trip mixes archaeology, adventure, and timeless desert landscapes.</p>
+                    </div>
+            </div>
+            <div class="card emel">
+                    <img src="images/italy.jpg" alt="emel image">
+                    <div class="card-text">
+                        <h3>Italy</h3>
+                        <p>Float through Venice’s canals and wander Rome’s historic piazzas, where art, history, and cuisine come together. A cultural feast of architecture, gelato, and centuries-old charm.</p>
+                    </div>
+            </div>
+            <div class="card emel">
+                    <img src="images/pery.jpg" alt="emel image">
+                    <div class="card-text">
+                        <h3>Peru</h3>
+                        <p>Trek ancient trails to the misty citadel of Machu Picchu and explore Andean villages steeped in Inca history. Adventure and breathtaking mountain vistas await every traveler.</p>
+                    </div>
+            </div>
+            <div class="card emel">
+                    <img src="images/bali.jpg" alt="emel image">
+                    <div class="card-text">
+                        <h3>Bali</h3>
+                        <p>Lush rice terraces, vibrant temples, and surf-ready beaches make Bali a diverse island escape. Perfect for relaxation, spiritual retreats, and tropical exploration.</p>
+                    </div>
+            </div>
+            <div class="card emel">
+                    <img src="images/patag.jpg" alt="emel image">
+                    <div class="card-text">
+                        <h3>Patagonia</h3>
+                        <p>Towering peaks, glaciers, and windswept plateaus offer epic treks and dramatic scenery. Patagonia is for outdoor lovers seeking remote trails and raw natural beauty.</p>
+                    </div>
+            </div>
+            <div class="card emel">
+                    <img src="images/turkey.jpg" alt="emel image">
+                    <div class="card-text">
+                        <h3>Turkey</h3>
+                        <p>Discover Istanbul’s grand mosques, Cappadocia’s fairy chimneys, and Antalya’s turquoise coast. Turkey blends East and West with rich history, vibrant bazaars, and stunning Mediterranean beauty.</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="form-container" id="contact-form">
+            <h2 class="register-heading">Register now and book a tour at the lowest price!</h2>
+            <form id="registerForm" novalidate>
+                <input type="text" id="name" placeholder="Name">
+                <span class="error" id="nameError"></span>
+
+                <input type="tel" id="phone" placeholder="Phone">
+                <span class="error" id="phoneError"></span>
+
+                <input type="email" id="email" placeholder="Email">
+                <span class="error" id="emailError"></span>
+
+                <button type="submit" id="register-btn">Register</button>
+            </form>
+        </div>
+
+        <div id="toast">Form submitted successfully!</div>
+
+
+        </section>
+    </div>
+    <footer>
+        <h3>Made by Abdunur Amangeldiyev</h3>
+        <p>from SE-2404</p>
+    </footer>
+    <script src="countup.js"></script>
+    <script src="searchbar.js"></script>
+    <script src="register-validation.js"></script>
+</body>
+</html>

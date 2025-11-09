@@ -1,0 +1,532 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", serif;
+    margin: 0;
+}
+
+/*
+    ======================================== NAVBAR ====================================================================
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+header .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.links a:hover {
+    color: #3D3BFF;
+}
+
+#theme-switch{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #e8e9ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#theme-switch svg:last-child{
+  display: none;
+}
+.darkmode #theme-switch svg:first-child{
+  display: none;
+}
+.darkmode #theme-switch svg:last-child{
+  display: block;
+}
+
+/*
+    ================================= MAIN SECTION & STATS ======================================================
+*/
+
+.container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.home-img {
+    width: 100%;
+    margin-bottom: 60px;
+    border-radius: 70px;
+}
+
+.container h2 {
+    font-size: 46px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.agency-parag {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container h3 {
+    font-size: 26px;
+    margin: 20px;
+}
+
+#stats {
+    margin-bottom: 100px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.stat {
+    background-color: #1b349f;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+.stat span {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.stat p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.stat img {
+    width: 40%;
+}
+
+
+
+/*
+    =================================== TOURS ========================================================================
+*/
+
+.search-container {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+#searchInput {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #004aad;
+    border-radius: 8px;
+    outline: none;
+}
+
+.tour-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.tour-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 370px;
+    height: 500px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.5s ease; 
+}
+
+.card.burabay:hover {
+  background: #0466c8; 
+  color: #f0f0f0;
+}
+
+.card.charyn:hover {
+  background: #ff9e00; 
+  color: #f0f0f0;
+}
+
+.card.emel:hover {
+    background: darkred; 
+    color: #f0f0f0;
+}
+
+.tour-container2 .card {
+    height: 420px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    height: 40%;
+}
+
+.card-text h3 {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.card-text p {
+    line-height: 22px;
+    padding: 0 20px;
+}
+
+.card-text a {
+    text-decoration: none;
+    border: solid 1px #000000;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+
+/*
+    ================================= FORM REGISTRATION =========================================================
+*/
+
+
+.form-container {
+    padding: 37px 50px;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+form {
+    width: 45%;
+}
+
+.register-heading {
+    margin: 0;
+    padding-top: 70px;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 54px;
+    width: 518px;
+
+}
+
+input {
+    border: none;
+    padding: 11px 24px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+#register-btn {
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #fff;
+    background-color: #3D3BFF;
+    padding: 11px 54px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 16px;
+
+}
+
+#register-btn:hover {
+    background-color: #026396;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Input states */
+input.invalid {
+  border: 2px solid red;
+}
+
+
+/* Toast styling */
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 12px;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s, bottom 0.5s;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 60px;
+}
+
+/* Color variations for toast */
+#toast.success {
+  background-color: #28a745;
+}
+
+#toast.error {
+  background-color: #dc3545;
+}
+
+
+footer {
+    background-color: #001845;
+    padding: 50px 100px;
+    color: #F1F1F1;
+}
+
+/*
+    ===================================== PROFILE PAGE ==============================================================
+*/
+
+#profile p {
+    font-size: 25px;
+}
+
+#logout-btn {
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: red;
+    background-color: #cfcece;
+    padding: 11px 54px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 16px;
+    margin-bottom: 100px;
+}
+
+#logout-btn:hover {
+    background-color: red;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+
+/*
+    ========================================= DARK MODE ================================================================
+*/
+
+body.darkmode {
+    color: #ffffff;
+    background-color: #070b1d;
+}
+
+body.darkmode #logo {
+    filter: invert(1) brightness(2);
+}
+
+body.darkmode #account {
+    filter: invert(1) brightness(2);
+}
+
+body.darkmode .links a {
+    color: #ffffff;
+}
+
+body.darkmode .card {
+    background-color: #101425;
+}
+
+body.darkmode .form-container {
+    background-color: #3a435d;
+}
+
+/*
+    =========================================== MEDIA QUERIES ========================================================================
+*/
+
+@media (max-width: 426px) {
+    
+    header {
+        flex-direction: column;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+
+    .links a {
+        margin: 0;
+    }
+
+    .container h1 {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .home-img {
+        margin-bottom: 30px;
+    }
+
+    .container h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .agency-parag {
+        font-size: 16px;
+    }
+
+    .stats-container {
+        row-gap: 20px;
+    }
+
+    .stat {
+        width: 150px;
+    }
+
+    .stat span {
+        font-size: 35px;
+    }
+
+    .form-container {
+        flex-wrap: wrap;
+        padding: 10px 25px;
+    }
+
+    .register-heading {
+        font-size: 30px;
+        padding-top: 20px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        text-align: center;
+        width: 100%;
+    }
+
+    #register-btn {
+        margin-bottom: 20px;
+    }
+
+    .error {
+        text-align: start;
+    }
+
+    footer {
+        padding: 25px 50px;
+    }
+
+    #profile p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 667px) {
+
+    header {
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    .container h1 {
+        margin-bottom: 30px;
+        font-size: 45px;
+    }
+
+    .container h2 {
+        font-size: 35px;
+    }
+
+    .agency-parag {
+        font-size: 25px;
+    }
+
+    .stats-container {
+        gap: 50px;
+    }
+
+    .form-container {
+        flex-wrap: wrap;
+    }
+
+    .register-heading {
+        padding-top: 30px;
+    }
+
+    form {
+        width: 100%;
+        text-align: center;
+    }
+
+    .error {
+        text-align: start;
+    }
+
+}
