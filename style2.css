@@ -334,6 +334,21 @@ body.darkmode .faq-item.active .faq-question {
     =============================================  MEDIA QUERIES ==========================================================
 */
 
+@media (max-width: 390px) {
+    header {
+        flex-direction: column;
+    }
+
+    .links a {
+        font-size: 15px;
+    }
+
+    #theme-switch {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 
 @media (max-width: 844px) {
     .container {
